@@ -5,7 +5,7 @@ spring:
     config:
       server:
         git:
-          uri: file://D:/Programming/java/Microservices/Esercizio5/ConfigRepo
+          uri: file://D:/Programming/java/Microservices/exercise5/ConfigRepo
           clone-on-start: true
 
 server:
