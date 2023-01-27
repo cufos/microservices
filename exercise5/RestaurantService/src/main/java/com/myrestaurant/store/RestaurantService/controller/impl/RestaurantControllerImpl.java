@@ -1,5 +1,6 @@
 package com.myrestaurant.store.RestaurantService.controller.impl;
 
+import com.myrestaurant.store.RestaurantService.FeignProxyClient.PizzaServiceProxyClient;
 import com.myrestaurant.store.RestaurantService.controller.RestaurantController;
 import com.myrestaurant.store.RestaurantService.dto.RestaurantDTO;
 import com.myrestaurant.store.RestaurantService.dto.RestaurantIdsDTO;
@@ -7,14 +8,11 @@ import com.myrestaurant.store.RestaurantService.mapper.RestaurantMapper;
 import com.myrestaurant.store.RestaurantService.model.Restaurant;
 import com.myrestaurant.store.RestaurantService.service.RestaurantService;
 import lombok.RequiredArgsConstructor;
-import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
-import org.springframework.web.client.RestTemplate;
 
 import java.util.List;
-import java.util.Objects;
 
 @RequestMapping("/restaurants")
 @RestController
@@ -24,6 +22,8 @@ public class RestaurantControllerImpl implements RestaurantController {
     private final RestaurantService restaurantService;
     private final RestaurantMapper restaurantMapper;
 
+    private final PizzaServiceProxyClient pizzaServiceProxyClient;
+
     @Value("${app.pizza-service-url}")
     private String pizzaServiceUrl;
 
@@ -32,6 +32,7 @@ public class RestaurantControllerImpl implements RestaurantController {
     public List<Object> addPizzasToRestaurant(List<RestaurantIdsDTO> restaurantIdsDTOS) {
         // RestTemplate restTemplate = new RestTemplate();
         // List<Object> result = List.of(restTemplate.postForObject(pizzaServiceUrl, restaurantIdsDTOS, Object[].class));
+        List<Object> result = pizzaServiceProxyClient.addPizzasToRestaurant(restaurantIdsDTOS);
         restaurantService.addPizzasToRestaurant(restaurantIdsDTOS);
         return null;
     }
@@ -39,9 +40,10 @@ public class RestaurantControllerImpl implements RestaurantController {
     @Override
     @GetMapping("/pizzas/{restaurantId}")
     public List<Object> getPizzasByRestaurantId(@PathVariable("restaurantId") Long restaurantId) {
-        RestTemplate restTemplate = new RestTemplate();
-        List<Object> result = List.of(Objects.requireNonNull(restTemplate.getForObject(pizzaServiceUrl + "/" + restaurantId, Object[].class)));
-        return result;
+        // RestTemplate restTemplate = new RestTemplate();
+        // List<Object> result = List.of(Objects.requireNonNull(restTemplate.getForObject(pizzaServiceUrl + "/" + restaurantId, Object[].class)));
+        List<Object> _result = pizzaServiceProxyClient.getPizzasToByRestaurant(restaurantId);
+        return _result;
     }
 
     @Override
