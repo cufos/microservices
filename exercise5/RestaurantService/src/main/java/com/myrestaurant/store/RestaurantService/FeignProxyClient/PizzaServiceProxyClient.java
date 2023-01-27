@@ -12,11 +12,11 @@ import java.util.List;
 @FeignClient(name = "PIZZA-SERVICE")
 public interface PizzaServiceProxyClient {
 
-  @PostMapping(value = "/pizzas/restaurants")
+  @PostMapping(value = "/api/pizzas/restaurants")
   List<Object> addPizzasToRestaurant(List<RestaurantIdsDTO> restaurantIdsDTOS);
 
-  @GetMapping(value = "/pizzas/restaurant/{id}")
-  public List<Object> getPizzasToByRestaurant(
+  @GetMapping(value = "/api/pizzas/restaurant/{id}")
+  List<Object> getPizzasToByRestaurant(
     @PathVariable("id") Long restaurantId
   );
 }
