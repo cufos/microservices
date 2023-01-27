@@ -1,0 +1,412 @@
+{
+  "info": {
+    "_postman_id": "2bf8c07d-8e95-4a81-8792-c81202d61a4c",
+    "name": "ProductService",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "1611202"
+  },
+  "item": [
+    {
+      "name": "Add topping \"Mozzarella\"",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"id\": 1,\n  \"name\": \"Mozzarella\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:9090/api/toppings",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "9090",
+          "path": [
+            "api",
+            "toppings"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Add topping \"Pomodoro\"",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"id\": 2,\n  \"name\": \"Pomodoro\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:9090/api/toppings",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "9090",
+          "path": [
+            "api",
+            "toppings"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Add topping \"Basilico\"",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"id\": 3,\n  \"name\": \"Basilico\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:9090/api/toppings",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "9090",
+          "path": [
+            "api",
+            "toppings"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Add topping \"Gorgonzola\"",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"id\": 4,\n  \"name\": \"Gorgonzola\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:9090/api/toppings",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "9090",
+          "path": [
+            "api",
+            "toppings"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Add topping \"Provolone\"",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"id\": 5,\n  \"name\": \"Provolone\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:9090/api/toppings",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "9090",
+          "path": [
+            "api",
+            "toppings"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Add topping \"Grana Padano\"",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"id\": 6,\n  \"name\": \"Grana Padano\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:9090/api/toppings",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "9090",
+          "path": [
+            "api",
+            "toppings"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get alla toppings",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:9090/api/toppings",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "9090",
+          "path": [
+            "api",
+            "toppings"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Add \"Margherita\" pizza",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"favorite\": true,\n  \"id\": 1,\n  \"name\": \"Margherita\",\n  \"toppings\": [\n    {\n      \"id\": 1,\n      \"name\": \"Mozzarella\"\n    },\n    {\n      \"id\": 2,\n      \"name\": \"Pomodoro\"\n    },\n    {\n      \"id\": 3,\n      \"name\": \"Basilico\"\n    }\n  ]\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:9090/api/pizzas",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "9090",
+          "path": [
+            "api",
+            "pizzas"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Add pizza \"4 Formaggi\"",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"favorite\": false,\n  \"id\": 2,\n  \"name\": \"4 Formaggi\",\n  \"toppings\": [\n    {\n      \"id\": 1,\n      \"name\": \"Mozzarella\"\n    },\n    {\n      \"id\": 4,\n      \"name\": \"Gorgonzola\"\n    },\n    {\n      \"id\": 5,\n      \"name\": \"Provolone\"\n    },\n    {\n      \"id\": 6,\n      \"name\": \"Grana Padano\"\n    }\n  ]\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:9090/api/pizzas",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "9090",
+          "path": [
+            "api",
+            "pizzas"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get all pizzas",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:9090/api/pizzas",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "9090",
+          "path": [
+            "api",
+            "pizzas"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get Pizza with ID",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:9090/api/pizzas/1",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "9090",
+          "path": [
+            "api",
+            "pizzas",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Add wrong topping \"Olivia\"",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"id\": 7,\n  \"name\": \"Olivia\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:9090/api/toppings",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "9090",
+          "path": [
+            "api",
+            "toppings"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Update wrong topping  in \"Olive\"",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"id\": 7,\n  \"name\": \"Olive\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:9090/api/toppings/7",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "9090",
+          "path": [
+            "api",
+            "toppings",
+            "7"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Add topping \"4 Delete\"",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"id\": 8,\n  \"name\": \"4 Delete\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:9090/api/toppings",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "9090",
+          "path": [
+            "api",
+            "toppings"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Delete topping \"4 Delete\"",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:9090/api/toppings/8",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "9090",
+          "path": [
+            "api",
+            "toppings",
+            "8"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}

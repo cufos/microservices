@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/NotificationServer/NotificationServer.iml" filepath="$PROJECT_DIR$/NotificationServer/NotificationServer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/microservice1/PizzaService/PizzaService.iml" filepath="$PROJECT_DIR$/microservice1/PizzaService/PizzaService.iml" />
+      <module fileurl="file://$PROJECT_DIR$/microservice2/RestaurantService/RestaurantService.iml" filepath="$PROJECT_DIR$/microservice2/RestaurantService/RestaurantService.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/esercizio4.iml" filepath="$PROJECT_DIR$/.idea/esercizio4.iml" />
+    </modules>
+  </component>
+</project>

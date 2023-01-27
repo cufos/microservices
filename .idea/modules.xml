@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/Microservices.iml" filepath="$PROJECT_DIR$/.idea/Microservices.iml" />
+      <module fileurl="file://$PROJECT_DIR$/excersize1/PizzaRestaurantService/PizzaRestaurantService.iml" filepath="$PROJECT_DIR$/excersize1/PizzaRestaurantService/PizzaRestaurantService.iml" />
+      <module fileurl="file://$PROJECT_DIR$/excersize2/microservice1/PizzaService/PizzaService.iml" filepath="$PROJECT_DIR$/excersize2/microservice1/PizzaService/PizzaService.iml" />
+      <module fileurl="file://$PROJECT_DIR$/excersize3/microservice1/PizzaService/PizzaService (1).iml" filepath="$PROJECT_DIR$/excersize3/microservice1/PizzaService/PizzaService (1).iml" />
+      <module fileurl="file://$PROJECT_DIR$/excersize2/microservice2/RestaurantService/RestaurantService.iml" filepath="$PROJECT_DIR$/excersize2/microservice2/RestaurantService/RestaurantService.iml" />
+      <module fileurl="file://$PROJECT_DIR$/excersize3/microservice2/RestaurantService/RestaurantService (1).iml" filepath="$PROJECT_DIR$/excersize3/microservice2/RestaurantService/RestaurantService (1).iml" />
+    </modules>
+  </component>
+</project>
